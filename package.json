@@ -1,5 +1,8 @@
 {
   "private": true,
+  "scripts": {
+    "lint": "standard"
+  },
   "dependencies": {
     "babel-core": "^6.9.1",
     "babel-loader": "^6.2.4",
@@ -9,5 +12,8 @@
     "react": "^15.1.0",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
+  },
+  "devDependencies": {
+    "standard": "^7.1.2"
   }
 }
