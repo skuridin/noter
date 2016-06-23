@@ -7,6 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const src = path.join(__dirname, 'src')
 
 module.exports = {
+  devtool: 'eval',
   context: src,
   entry: './app.js',
   output: {
