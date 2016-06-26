@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "lint": "standard",
-    "build": "rimraf ./dist/ && webpack",
+    "build": "NODE_ENV=production rimraf ./dist/ && webpack --config ./webpack.config.production.js",
     "dev": "webpack-dev-server --inline --hot"
   },
   "dependencies": {
@@ -13,6 +13,7 @@
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.21.0",
+    "lodash": "^4.13.1",
     "normalize.css": "^4.1.1",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
