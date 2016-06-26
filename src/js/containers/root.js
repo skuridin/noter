@@ -12,7 +12,7 @@ export default class Root extends React.Component {
 
     this.state = {
       note: sample(NOTES),
-      delay: 3,
+      delay: 5,
       deep: random(1, 2)
     }
 
