@@ -2,8 +2,10 @@
   "private": true,
   "scripts": {
     "lint": "standard",
-    "build": "NODE_ENV=production rimraf ./dist/ && webpack --config ./webpack.config.production.js",
+    "prebuild": "npm run lint && rimraf ./dist/",
+    "build": "NODE_ENV=production webpack --config ./webpack.config.production.js",
     "dev": "webpack-dev-server --inline --hot",
+    "predeploy": "npm run build",
     "deploy": "push-dir --dir=dist --branch=gh-pages"
   },
   "dependencies": {
